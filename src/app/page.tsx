@@ -1,69 +1,98 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="flex-grow w-full max-w-7xl mx-auto px-6 md:px-8 py-12 flex flex-col gap-16 relative">
+      {/* Hero Section */}
+      <section className="relative w-full rounded-[2rem] overflow-hidden min-h-[80vh] flex items-center justify-center neo-raised p-8">
+        <div className="absolute inset-0 z-0 bg-white/20">
+          <img 
+            alt="Abstract DNA and Protein Background" 
+            className="w-full h-full object-cover opacity-60" 
+            src="/hero_background.png" 
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="relative z-10 w-full max-w-3xl">
+          <div className="glass-panel rounded-3xl p-10 md:p-14 flex flex-col items-center text-center gap-6 -translate-x-8 -translate-y-8">
+            
+            <h1 className="font-headline text-5xl md:text-7xl font-bold text-on-surface leading-tight tracking-tight">
+              Hi, I'm <span className="text-primary">Vedant</span>
+            </h1>
+            <p className="text-xl md:text-3xl font-headline font-bold text-on-surface leading-tight tracking-tight">
+              I bridge <span className="text-tertiary">biology</span> with <span className="text-primary">computation</span>
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-3 mt-2">
+              <div className="neo-pressed px-4 py-2 rounded-full text-secondary font-medium text-sm flex items-center shadow-neo-pressed">
+                Bioinformatics
+              </div>
+              <div className="neo-pressed px-4 py-2 rounded-full text-secondary font-medium text-sm flex items-center shadow-neo-pressed">
+                Computational Structural Biology
+              </div>
+            </div>
+
+            <div className="flex gap-4 mt-8 w-full justify-center">
+              <a href="https://drive.google.com/file/d/1t2GNxUC4cyX6Qzzqsz7ZsBMy9yy_hQJ_/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-background shadow-neo-raised text-primary font-semibold px-10 py-4 rounded-xl hover:text-tertiary active:shadow-neo-pressed transition-all duration-300">
+                View Resume
+              </a>
+            </div>
+            
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Bento Grid: Profile & Skills */}
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full">
+        {/* Research Profile */}
+        <div className="lg:col-span-6 neo-raised rounded-[2rem] p-10 flex flex-col gap-8">
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 rounded-2xl neo-pressed flex items-center justify-center text-primary">
+              <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>science</span>
+            </div>
+            <h2 className="font-headline text-3xl font-semibold text-on-surface">Research Profile</h2>
+          </div>
+          <div className="neo-pressed rounded-2xl p-8 flex flex-col gap-4">
+            <p className="text-on-surface-variant leading-relaxed text-lg">
+              Bioinformatics graduate specializing in computational structural biology, with a foundation in molecular simulation and structure-based methods. Building an understanding of machine learning, with a growing interest in applying it across biology, from structural questions to areas like omics and beyond, learning and taking on new problems along the way. Aims to keep deepening this knowledge and apply it to solve real biological problems through computational methods.
+            </p>
+          </div>
+        </div>
+
+        {/* Technical Skills */}
+        <div className="lg:col-span-6 neo-raised rounded-[2rem] p-10 flex flex-col gap-8">
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 rounded-2xl neo-pressed flex items-center justify-center text-primary">
+              <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>terminal</span>
+            </div>
+            <h2 className="font-headline text-3xl font-semibold text-on-surface">Technical Skills</h2>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {/* Languages */}
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">Python</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">R</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">Perl</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">Bash</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">HTML</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">SQL</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">PHP</div>
+            
+            {/* Molecular Simulation */}
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">GROMACS</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">VMD</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">PyMOL</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">ChimeraX</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">AutoDock Vina</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">Schrödinger</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">MDAnalysis</div>
+            
+            {/* Machine Learning */}
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">PyTorch</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">PocketXMol</div>
+            
+            {/* Environments */}
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">Linux</div>
+            <div className="bg-background shadow-neo-pressed px-4 py-2 rounded-xl text-on-surface font-medium text-sm">HPC (SLURM)</div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
