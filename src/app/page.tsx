@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="neo-pressed rounded-2xl p-8 flex flex-col gap-4">
             <p className="text-on-surface-variant leading-relaxed text-lg">
-              Bioinformatics graduate specializing in computational structural biology, with a foundation in molecular simulation and structure-based methods. Building an understanding of machine learning, with a growing interest in applying it across biology, from structural questions to areas like omics and beyond, learning and taking on new problems along the way. Aims to keep deepening this knowledge and apply it to solve real biological problems through computational methods.
+              Bioinformatics graduate specializing in computational structural biology, with a foundation in molecular simulation and structure-based methods. Building an understanding of machine learning, with a growing interest in applying it across biology, from structural questions to areas like omics and beyond, learning and taking on new problems along the way. Aims to delve deeper into this domain and apply it to solve real biological problems through computational methods.
             </p>
           </div>
         </div>

@@ -9,9 +9,9 @@ export default function Navigation() {
   return (
     <header className="w-full top-0 sticky bg-background/90 backdrop-blur-md z-50 shadow-[6px_6px_12px_rgba(0,0,0,0.08),-6px_-6px_12px_rgba(255,255,255,0.6)]">
       <div className="flex justify-between items-center w-full px-6 md:px-8 py-6 max-w-7xl mx-auto">
-        <div className="text-xl md:text-2xl font-semibold tracking-tight text-primary">
+        <Link href="/" className="text-xl md:text-2xl font-semibold tracking-tight text-primary hover:text-tertiary transition-colors">
           Vedant Vikas Sarode
-        </div>
+        </Link>
         
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-2 font-body font-semibold text-on-surface">
