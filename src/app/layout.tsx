@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Vedant Vikas Sarode - Bioinformatics Portfolio',
-  description: 'Bioinformatics graduate specializing in computational structural biology & protein modeling.',
+  description: 'Portfolio of Vedant Vikas Sarode, a Bioinformatics graduate specializing in computational structural biology and molecular simulation.',
+  keywords: ['Vedant Sarode', 'Vedant Vikas Sarode', 'Bioinformatics', 'Computational Structural Biology', 'Portfolio', 'Molecular Simulation'],
 };
 
 export default function RootLayout({
