@@ -10,8 +10,8 @@ export default function Home() {
             src="/hero_background.png" 
           />
         </div>
-        <div className="relative z-10 w-full max-w-3xl">
-          <div className="glass-panel rounded-3xl p-10 md:p-14 flex flex-col items-center text-center gap-6 -translate-x-8 -translate-y-8">
+        <div className="relative z-10 w-full max-w-3xl mx-auto">
+          <div className="glass-panel rounded-3xl p-8 md:p-14 flex flex-col items-center text-center gap-6">
             
             <h1 className="font-headline text-5xl md:text-7xl font-bold text-on-surface leading-tight tracking-tight">
               Hi, I'm <span className="text-primary">Vedant</span>

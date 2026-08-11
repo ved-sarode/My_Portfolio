@@ -14,9 +14,9 @@ export default function Contact() {
             <div className="w-12 h-12 rounded-lg shadow-neo-pressed flex items-center justify-center text-primary group-hover:text-tertiary transition-colors">
               <span className="material-symbols-outlined">mail</span>
             </div>
-            <div>
+            <div className="min-w-0 flex-1">
               <h3 className="font-headline font-semibold text-lg text-primary">Email</h3>
-              <p className="text-on-surface-variant">vedantsarode15@gmail.com</p>
+              <p className="text-on-surface-variant break-all">vedantsarode15@gmail.com</p>
             </div>
           </a>
 
