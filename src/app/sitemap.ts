@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Update this to your actual domain name once you deploy, or set NEXT_PUBLIC_BASE_URL in your .env file
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://vedantsarode.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://vedantsarode.vercel.app';
 
   return [
     {
