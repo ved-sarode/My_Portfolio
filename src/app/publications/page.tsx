@@ -11,14 +11,14 @@ export default function Publications() {
         <div className="flex items-center justify-between mb-2">
           <h2 className="font-headline font-semibold text-2xl text-on-surface">Publications</h2>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Pub 1 */}
           <div className="glass-card rounded-2xl p-8 flex flex-col aspect-square group cursor-pointer justify-between">
             <h3 className="font-headline font-semibold text-xl text-on-surface leading-tight mt-2">
               Structural basis for substrate recognition by the pain-associated neuronal polyamine transporter SLC45A4
             </h3>
-            
+
             <div className="flex justify-between items-end mt-auto gap-4">
               <div className="text-sm text-on-surface-variant font-medium leading-snug">
                 International Journal of Biological Macromolecules
@@ -27,7 +27,7 @@ export default function Publications() {
                 2026
               </span>
             </div>
-            
+
             <div className="mt-4 pt-4 border-t border-outline-variant/30">
               <a href="https://doi.org/10.1016/j.ijbiomac.2026.153275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-tertiary transition-colors">
                 DOI Link <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>open_in_new</span>
@@ -40,7 +40,7 @@ export default function Publications() {
             <h3 className="font-headline font-semibold text-xl text-on-surface leading-tight mt-2">
               Raman Spectroscopy for Microplastic Research
             </h3>
-            
+
             <div className="flex justify-between items-end mt-auto gap-4">
               <div className="text-sm text-on-surface-variant font-medium leading-snug">
                 Vibrational Spectroscopy for Biopolymer Characterization (Springer)
@@ -62,7 +62,7 @@ export default function Publications() {
             <h3 className="font-headline font-semibold text-xl text-on-surface leading-tight mt-2">
               Raman Spectroscopy for Bioplastic Research
             </h3>
-            
+
             <div className="flex justify-between items-end mt-auto gap-4">
               <div className="text-sm text-on-surface-variant font-medium leading-snug">
                 Vibrational Spectroscopy for Biopolymer Characterization (Springer)
@@ -84,20 +84,20 @@ export default function Publications() {
             <h3 className="font-headline font-semibold text-xl text-on-surface leading-tight mt-2">
               Molecular simulation reveals how the host thromboinflammatory C-type lectin receptor CLEC2 interacts with the receptor-binding domain of SARS-CoV-2
             </h3>
-            
+
             <div className="flex justify-between items-end mt-auto gap-4">
               <div className="text-sm text-on-surface-variant font-medium leading-snug">
-                Manuscript under review
+                Nature Scientific Reports
               </div>
               <span className="bg-background shadow-neo-raised text-secondary text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">
-                Pending
+                2026
               </span>
             </div>
 
             <div className="mt-4 pt-4 border-t border-outline-variant/30">
-              <span className="inline-flex items-center gap-2 text-secondary font-semibold">
-                Under Review
-              </span>
+              <a href="https://doi.org/10.1038/s41598-026-67048-1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-tertiary transition-colors">
+                DOI Link <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>open_in_new</span>
+              </a>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function Publications() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <h2 className="font-headline font-semibold text-2xl text-on-surface">Conference Presentations</h2>
         </div>
-        
+
         <div className="flex flex-col gap-6">
           {/* Presentation 1 */}
           <div className="bg-background shadow-neo-raised rounded-xl p-6 flex flex-col md:flex-row gap-6 items-start hover:bg-surface-bright/20 transition-colors duration-300">
